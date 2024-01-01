@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'pwd' // Display current working directory
                 sh 'python --version'
             }
         }
